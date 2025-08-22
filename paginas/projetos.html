@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="description" content="moonu - portfolio">
+    <meta name="keywords" content="design, ux/ui, creative">
+    <link rel="icon" href="../images/fav-icon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="../css/styles.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    
+    <title data-translate="page-title">Portfolio - Moonu Design</title>
+    <script src="../js/script.js" defer></script>
+</head>
+
+<body>
+    <!-- Header Navigation -->
+    <header class="header">
+        <!-- Logo -->
+        <div class="logo">
+            <a href="../index.html">
+                <img src="../images/logo_menu.png" alt="Logotipo moonu" class="logo-img">
+            </a>
+        </div>
+
+        <!-- Desktop Navigation -->
+        <nav class="nav">
+            <a href="./projetos.html" data-translate="nav-projects">Projects</a>
+            <a href="../index.html#card4" data-translate="nav-about">About</a>
+            <a href="../index.html#card5" data-translate="nav-process">Process</a>
+        </nav>
+
+        <!-- Header Right Group -->
+        <div class="header-right-group">
+            <!-- Language Selector -->
+            <div class="language-selector">
+                <button class="lang-btn" data-lang="EN">EN</button>
+            </div>
+            <!-- Contact Button -->
+            <a href="./contactos.html" class="contact-btn" data-translate="nav-contact">Contact</a>
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <button class="mobile-menu-btn" onclick="toggleMobileMenu(this)">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+
+        <!-- Mobile Navigation -->
+        <nav class="mobile-nav" id="mobileNav">
+            <a href="../index.html" onclick="closeMobileMenu()" data-translate="nav-home">Home</a>
+            <a href="../index.html#card4" onclick="closeMobileMenu()" data-translate="nav-about">About</a>
+            <a href="./projetos.html" onclick="closeMobileMenu()" data-translate="nav-projects">Projects</a>
+            <a href="./contactos.html" onclick="closeMobileMenu()" data-translate="nav-contact">Contact</a>
+
+            <!-- Language Selector for mobile -->
+            <div class="language-selector">
+                <button class="lang-btn" data-lang="EN">EN</button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main" id="scrollContainer">
+        <div class="imagem-projetos-container">
+            <img src="../images/pixel.webp" alt="Projects header" class="imagem-projetos">
+        </div>
+
+        <!-- Projects Card -->
+        <section class="card" id="card_projetos">
+            <div class="projects-container">
+                <div class="projects-grid">
+                    <!-- Project Cards -->
+                    <div class="project-card">
+                        <img src="../images/design1.webp" alt="Pedro Pinto project" class="project-image">
+                        <div class="card-content">
+                            <div class="card-header">
+                                <div class="card-info">
+                                    <h3>Pedro Pinto</h3>
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <span class="tag" data-translate="tag-identity">Identity</span>
+                                <a href="./projeto-pedro-pinto-identidade.html" class="arrow-icon-projetos" aria-label="Go to project page">
+                                    <img src="../images/seta.svg" alt="" width="30" height="30">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <img src="../images/contos_gin_tonic_book/capa1.webp" alt="Gin-tonic tales project" class="project-image">
+                        <div class="card-content">
+                            <div class="card-header">
+                                <div class="card-info">
+                                    <h3 data-translate="project-gin-tonic">Gin-tonic Tales</h3>
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <span class="tag" data-translate="tag-editorial">Editorial</span>
+                                <a href="./contos-gin-tónic-editorial.html" class="arrow-icon-projetos" aria-label="Go to project page">
+                                    <img src="../images/seta.svg" alt="" width="30" height="30">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <img src="../images/design3.webp" alt="Day D event project" class="project-image">
+                        <div class="card-content">
+                            <div class="card-header">
+                                <div class="card-info">
+                                    <h3 data-translate="project-day-d">Day D - Event</h3>
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <span class="tag" data-translate="tag-identity">Identity</span>
+                                <a href="./branding_evento_diaD.html" class="arrow-icon-projetos" aria-label="Go to project page">
+                                    <img src="../images/seta.svg" alt="" width="30" height="30">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <img src="../images/moonu/Gravity-Identity-Brand-Cards-Free-psd-Mockup.webp" alt="Moonu creative studio project" class="project-image">
+                        <div class="card-content">
+                            <div class="card-header">
+                                <div class="card-info">
+                                    <h3 data-translate="project-moonu">Moonu - <br>Creative Studio</h3>
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <span class="tag" data-translate="tag-identity">Identity</span>
+                                <a href="./moonu-identidade-visual.html" class="arrow-icon-projetos" aria-label="Go to project page">
+                                    <img src="../images/seta.svg" alt="" width="30" height="30">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <img src="../images/pedepontos.webp" alt="Coming soon project" class="project-image">
+                        <div class="card-content">
+                            <div class="card-header">
+                                <div class="card-info">
+                                    <h3><em data-translate="coming-soon">Coming soon</em></h3>
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <span class="tag">UX/UI</span>
+                                <a href="" class="arrow-icon-projetos" aria-label="Go to project page">
+                                    <img src="../images/seta.svg" alt="" width="30" height="30">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CTA Section -->
+                <div class="cta">
+                    <p class="cta-main" data-translate="cta-main">Curious to see what we can create together?</p>
+                    <p class="cta-sub" data-translate="cta-sub-projects">Get in touch to talk about projects.</p>
+                    <button onclick="location.href='./contactos.html'" class="cta-btn" data-translate="cta-btn">Send Message</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; <span id="anoAtual"></span> <span data-translate="footer-text">Moonu Design | Compiled creativity</span></p>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/mnunomoura/" target="_blank" rel="noopener noreferrer">Linkedin</a>
+            <span>|</span>
+            <a href="https://www.behance.net/nfiliper" target="_blank" rel="noopener noreferrer">Behance</a>
+            <span>|</span>
+            <a href="https://www.instagram.com/moonu.creative/" target="_blank" rel="noopener noreferrer">Instagram</a>
+        </div>
+    </footer>
+</body>
+
+</html>

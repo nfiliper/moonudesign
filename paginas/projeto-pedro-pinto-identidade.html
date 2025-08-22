@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="description" content="moonu - portfolio">
+    <meta name="keywords" content="design, ux/ui, creative">
+    <link rel="icon" href="../images/fav-icon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="../css/styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    
+
+    <title data-translate="page-title">Portfolio - Moonu Design</title>
+    <script src="../js/script.js" defer></script>
+</head>
+
+<body>
+    <!-- Header Navigation -->
+    <header class="header">
+        <!-- Logo -->
+        <div class="logo">
+            <a href="../index.html">
+                <img src="../images/logo_menu.png" alt="Logotipo moonu" class="logo-img">
+            </a>
+        </div>
+
+        <!-- Desktop Navigation -->
+        <nav class="nav">
+            <a href="./projetos.html" data-translate="nav-projects">Projects</a>
+            <a href="../index.html#card4" data-translate="nav-about">About</a>
+            <a href="../index.html#card5" data-translate="nav-process">Process</a>
+        </nav>
+
+        <!-- Header Right Group -->
+        <div class="header-right-group">
+            <!-- Language Selector -->
+            <div class="language-selector">
+                <button class="lang-btn" data-lang="EN">EN</button>
+            </div>
+            <!-- Contact Button -->
+            <a href="./contactos.html" class="contact-btn" data-translate="nav-contact">Contact</a>
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <button class="mobile-menu-btn" onclick="toggleMobileMenu(this)">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+
+        <!-- Mobile Navigation -->
+        <nav class="mobile-nav" id="mobileNav">
+            <a href="../index.html" onclick="closeMobileMenu()" data-translate="nav-home">Home</a>
+            <a href="../index.html#card4" onclick="closeMobileMenu()" data-translate="nav-about">About</a>
+            <a href="./projetos.html" onclick="closeMobileMenu()" data-translate="nav-projects">Projects</a>
+            <a href="./contactos.html" onclick="closeMobileMenu()" data-translate="nav-contact">Contact</a>
+
+            <!-- Language Selector for mobile -->
+            <div class="language-selector">
+                <button class="lang-btn" data-lang="EN">EN</button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main" id="scrollContainer">
+        <div class="imagem-projetos-container">
+            <img src="../images/pedro_pinto/capa.webp" alt="Pedro Pinto brand cover" class="imagem-projetos">
+        </div>
+
+        <!-- Project Card -->
+        <section class="card" id="card_projetos_individual">
+            <div class="container">
+                <!-- Intro Section -->
+                <section class="intro-section">
+                    <div class="title-content-individual">
+                        <h2 class="intro-title" data-translate="pedro-pinto-title">Pedro Pinto.</h2>
+                        <span class="tag-projetos" data-translate="tag-identity">Identity</span>
+                    </div>
+                    <div>
+                        <p class="intro-text" data-translate="pedro-pinto-description">
+                            Pedro Pinto is not just a name — it's the signature of trust, rigor and clarity in specialized communication in linguistic consultancy and translation services.
+                        </p>
+                    </div>
+                </section>
+
+                <div class="video-container">
+                    <video autoplay muted loop playsinline>
+                        <source src="../images/pedro_pinto/brand_animation.mp4" type="video/mp4">
+                    </video>
+                </div>
+
+                <!-- Large Image -->
+                <section class="large-image">
+                    <div class="large-image-placeholder">
+                        <img src="../images/pedro_pinto/1.webp" alt="Pedro Pinto brand identity">
+                    </div>
+                </section>
+
+                <!-- Image Grid -->
+                <section class="image-grid">
+                    <div class="image-placeholder">
+                        <img src="../images/pedro_pinto/2.webp" alt="Pedro Pinto brand materials">
+                    </div>
+                    <div class="image-placeholder">
+                        <img src="../images/pedro_pinto/3.webp" alt="Pedro Pinto brand materials">
+                    </div>
+                </section>
+
+                <!-- Arrow Section -->
+                <section class="arrow-section">
+                    <div class="arrow">
+                        ➔
+                    </div>
+                    <div class="arrow-text" data-translate="pedro-pinto-brand-concept">
+                        As a brand, it represents a bridge between languages and contexts, offering translation and linguistic consultancy services with technical precision and cultural sensitivity. Pedro Pinto's branding reflects this mission: proximity, professionalism and excellence in the art of communicating.
+                    </div>
+                </section>
+
+                <!-- Large Image -->
+                <section class="large-image">
+                    <div class="large-image-placeholder">
+                        <img src="../images/pedro_pinto/4.webp" alt="Pedro Pinto brand applications">
+                    </div>
+                </section>
+
+                <section class="large-image">
+                    <div class="large-image-placeholder">
+                        <img src="../images/pedro_pinto/7.webp" alt="Pedro Pinto brand applications">
+                    </div>
+                </section>
+
+                <section class="large-image">
+                    <div class="large-image-placeholder">
+                        <img src="../images/pedro_pinto/website.webp" alt="Pedro Pinto website">
+                    </div>
+                </section>
+
+                <!-- Arrow Section -->
+                <section class="arrow-section-2">
+                    <div class="arrow-text-2" data-translate="pedro-pinto-differentiator">
+                       The company's differentiating factor resided in its connection with legal sector professionals, such as lawyers and notaries, with the objective of attracting a more demanding target audience, which values elegance and detail.
+                    </div>
+                    <div class="arrow-2">
+                        ➔
+                    </div>
+                </section>
+
+                <section class="large-image">
+                    <div class="large-image-placeholder">
+                        <img src="../images/pedro_pinto/6.webp" alt="Pedro Pinto brand applications">
+                    </div>
+                </section>
+
+                <!-- CTA Section -->
+                <div class="cta">
+                    <p class="cta-main" data-translate="cta-main">Curious to see what we can create together?</p>
+                    <p class="cta-sub" data-translate="cta-sub">Send a message to open doors to your brand!</p>
+                    <button onclick="location.href='./contactos.html'" class="cta-btn" data-translate="cta-btn">Send Message</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; <span id="anoAtual"></span> <span data-translate="footer-text">Moonu Design | Compiled creativity</span></p>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/mnunomoura/" target="_blank" rel="noopener noreferrer">Linkedin</a>
+            <span>|</span>
+            <a href="https://www.behance.net/nfiliper" target="_blank" rel="noopener noreferrer">Behance</a>
+            <span>|</span>
+            <a href="https://www.instagram.com/moonu.creative/" target="_blank" rel="noopener noreferrer">Instagram</a>
+        </div>
+    </footer>
+</body>
+
+</html>

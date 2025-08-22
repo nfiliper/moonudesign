@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="description" content="moonu - portfolio">
+    <meta name="keywords" content="design, ux/ui, creative">
+    <link rel="icon" href="../images/fav-icon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="../css/styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <title data-translate="page-title">Portfolio - Moonu Design</title>
+    <script src="../js/script.js" defer></script>
+</head>
+
+<body>
+    <!-- Header Navigation -->
+    <header class="header">
+        <!-- Logo -->
+        <div class="logo">
+            <a href="../index.html">
+                <img src="../images/logo_menu.png" alt="Logotipo moonu" class="logo-img">
+            </a>
+        </div>
+
+        <!-- Desktop Navigation -->
+        <nav class="nav">
+            <a href="./projetos.html" data-translate="nav-projects">Projects</a>
+            <a href="../index.html#card4" data-translate="nav-about">About</a>
+            <a href="../index.html#card5" data-translate="nav-process">Process</a>
+        </nav>
+
+        <!-- Header Right Group -->
+        <div class="header-right-group">
+            <!-- Language Selector -->
+            <div class="language-selector">
+                <button class="lang-btn" data-lang="EN">EN</button>
+            </div>
+            <!-- Contact Button -->
+            <a href="./contactos.html" class="contact-btn" data-translate="nav-contact">Contact</a>
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <button class="mobile-menu-btn" onclick="toggleMobileMenu(this)">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+
+        <!-- Mobile Navigation -->
+        <nav class="mobile-nav" id="mobileNav">
+            <a href="../index.html" onclick="closeMobileMenu()" data-translate="nav-home">Home</a>
+            <a href="../index.html#card4" onclick="closeMobileMenu()" data-translate="nav-about">About</a>
+            <a href="./projetos.html" onclick="closeMobileMenu()" data-translate="nav-projects">Projects</a>
+            <a href="./contactos.html" onclick="closeMobileMenu()" data-translate="nav-contact">Contact</a>
+
+            <!-- Language Selector for mobile -->
+            <div class="language-selector">
+                <button class="lang-btn" data-lang="EN">EN</button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main" id="scrollContainer">
+        <div class="imagem-projetos-container">
+            <img src="../images/contactos.webp" alt="Contact image" class="imagem-contactos">
+        </div>
+
+        <!-- Contact Card -->
+        <section class="card" id="card_contactos">
+            <div class="content-contactos">
+                <!-- Header -->
+                <div class="firstCard-content">
+                    <section class="intro-section animate-fade-in" id="firstCard-content-contactos">
+                        <div class="title-content-individual">
+                            <h2 class="intro-title" data-translate="contact-title">Talk to me.</h2>
+                        </div>
+                        <div>
+                            <p class="intro-text" data-translate="contact-subtitle">
+                                Do you have a project in mind or an interesting opportunity? Let's talk.
+                            </p>
+                        </div>
+                    </section>
+                </div>
+
+                <!-- Contact Form Card -->
+                <div class="dois-cards-contacto">
+                    <!-- Modified card with split layout -->
+                    <div class="card-content-contactos animate-slide-up" id="card-content-contactos-left">
+                        <div class="contact-left-half">
+                            <div class="contact-left-half-content">
+                                <p data-translate="contact-cta-1">
+                                    Do you want to bring your project to life? Get in touch!</p>
+                                <p>
+                                    <a class="contact-link">moonu.criativo@gmail.com</a>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="contact-right-half animate-fade-in">
+                            <div class="location-text">
+                                <p data-translate="location-text"><strong>Location: Porto, Portugal</strong></p>
+                                <i data-translate="remote-work">working remotely</i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-content-contactos animate-slide-up" id="card-content-contactos-right">
+                        <form id="contactForm" class="contact-form">
+                            <!-- Basic Information -->
+                            <div class="form-section">
+                                <div class="form-field">
+                                    <label for="name" class="form-label"></label>
+                                    <input type="text" id="name" name="name" class="form-input" data-translate-placeholder="form-name" placeholder="Your name" required>
+                                </div>
+
+                                <div class="form-field">
+                                    <label for="email" class="form-label"></label>
+                                    <input type="email" id="email" name="email" class="form-input" data-translate-placeholder="form-email" placeholder="your.email@example.com" required>
+                                </div>
+
+                                <div class="form-field">
+                                    <label for="phone" class="form-label"></label>
+                                    <input type="tel" id="phone" name="phone" class="form-input" data-translate-placeholder="form-phone" placeholder="phone (optional)">
+                                </div>
+                            </div>
+
+                            <!-- Contact Type -->
+                            <div class="form-field">
+                                <label class="form-label"></label>
+                                <div class="toggle-group">
+                                    <button type="button" id="recruiterBtn" class="toggle-option toggle-option-active" data-type="recruiter" data-translate="form-recruiter">
+                                        I'm a Recruiter
+                                    </button>
+                                    <button type="button" id="clientBtn" class="toggle-option" data-type="client" data-translate="form-client">
+                                        I'm a Client
+                                    </button>
+                                </div>
+                            </div>
+
+                            <!-- Client-specific fields -->
+                            <div id="clientFields" class="client-fields hidden">
+                                <div class="form-field">
+                                    <label class="form-label" data-translate="form-services-label">Desired services</label>
+                                    <div class="checkbox-group">
+                                        <div class="checkbox-item">
+                                            <input type="checkbox" id="brand" name="services" value="brand">
+                                            <label for="brand" class="checkbox-label" data-translate="service-branding">Brand Design</label>
+                                        </div>
+                                        <div class="checkbox-item">
+                                            <input type="checkbox" id="editorial" name="services" value="editorial">
+                                            <label for="editorial" class="checkbox-label" data-translate="service-editorial">Editorial Design</label>
+                                        </div>
+                                        <div class="checkbox-item">
+                                            <input type="checkbox" id="web" name="services" value="web">
+                                            <label for="web" class="checkbox-label" data-translate="service-web">Web Design</label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="form-field">
+                                    <label for="budget" class="form-label"></label>
+                                    <select id="budget" name="budget" class="form-input">
+                                        <option value="" data-translate="form-budget-select">Select a budget range</option>
+                                        <option value="€500 - €1.000">€500 - €1.000</option>
+                                        <option value="€1.000 - €2.500">€1.000 - €2.500</option>
+                                        <option value="€2.500 - €5.000">€2.500 - €5.000</option>
+                                        <option value="€5.000 - €10.000">€5.000 - €10.000</option>
+                                        <option value="€10.000+">€10.000+</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="form-field">
+                                <label for="description" class="form-label"></label>
+                                <textarea id="description" name="description" class="form-input form-textarea" data-translate-placeholder="form-description" placeholder="Describe your project" rows="5"></textarea>
+                            </div>
+
+                            <!-- Terms and Conditions -->
+                            <div class="form-field">
+                                <div class="checkbox-item">
+                                    <input type="checkbox" id="terms" name="terms" required>
+                                    <label for="terms" class="checkbox-label">
+                                        <span data-translate="form-terms-1">I accept the</span>
+                                        <a href="../download/termos_condicoes" target="_blank" rel="noopener noreferrer" class="terms-link" data-translate="form-terms-link">
+                                            Terms and Conditions
+                                        </a> *
+                                    </label>
+                                </div>
+                            </div>
+
+                            <!-- Submit Button -->
+                            <div class="btn-button-submite">
+                                <button type="submit" id="submitBtn" class="btn-primary animate-scale-in">
+                                    <span id="submitText" class="btn-content">
+                                        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <polyline points="20,6 9,17 4,12" />
+                                        </svg>
+                                        <span data-translate="form-submit">Send Message</span>
+                                    </span>
+                                    <span id="loadingText" class="btn-content hidden">
+                                        <div class="spinner"></div>
+                                        <span data-translate="form-sending">Sending...</span>
+                                    </span>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; <span id="anoAtual"></span> <span data-translate="footer-text">Moonu Design | Compiled creativity</span></p>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/mnunomoura/" target="_blank" rel="noopener noreferrer">Linkedin</a>
+            <span>|</span>
+            <a href="https://www.behance.net/nfiliper" target="_blank" rel="noopener noreferrer">Behance</a>
+            <span>|</span>
+            <a href="https://www.instagram.com/moonu.creative/" target="_blank" rel="noopener noreferrer">Instagram</a>
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script>
+        (function () {
+            emailjs.init("u7mp2thQXdvaQ62mC");
+        })();
+
+        document
+            .getElementById("contactForm")
+            .addEventListener("submit", function (e) {
+                e.preventDefault();
+
+                emailjs
+                    .send("service_a400acb", "template_ufqwvdq", {
+                        name: document.getElementById("name").value,
+                        email: document.getElementById("email").value,
+                        phone: document.getElementById("phone").value,
+                        description: document.getElementById("description").value,
+                        recruiterBtn: document.getElementById("recruiterBtn").checked ? document.getElementById("recruiterBtn").value : '',
+                        clientBtn: document.getElementById("clientBtn").checked ? document.getElementById("clientBtn").value : '',
+                        brand: document.getElementById("brand").checked ? document.getElementById("brand").value : '',
+                        editorial: document.getElementById("editorial").checked ? document.getElementById("editorial").value : '',
+                        web: document.getElementById("web").checked ? document.getElementById("web").value : '',
+                        budget: document.getElementById("budget").value || '',
+                    })
+                    .then(
+                        function (response) {
+                            alert("Email sent successfully! Please wait for contact");
+                        },
+                        function (error) {
+                            alert("Send failed");
+                            console.error("EmailJS error:", error);
+                        }
+                    );
+            });
+    </script>
+</body>
+
+</html>

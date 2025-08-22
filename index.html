@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="description" content="moonu - portfolio">
+    <meta name="keywords" content="design, ux/ui, creative">
+    <link rel="icon" href="./images/fav-icon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="./css/styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    
+    <script src="./js/script.js" defer></script>
+    <title data-translate="page-title">Portfolio - Moonu Design</title>
+</head>
+
+<body>
+    <!-- Header Navigation -->
+    <header class="header">
+        <!-- Logo -->
+        <div class="logo">
+            <a href="">
+                <img src="./images/logo_menu.png" alt="Logotipo moonu" class="logo-img">
+            </a>
+        </div>
+
+        <!-- Desktop Navigation -->
+        <nav class="nav">
+            <a href="./paginas/projetos.html" data-translate="nav-projects">Projects</a>
+            <a href="#card4" data-translate="nav-about">About</a>
+            <a href="#card5" data-translate="nav-process">Process</a>
+        </nav>
+
+        <!-- Header Right Group -->
+        <div class="header-right-group">
+            <!-- Language Selector -->
+            <div class="language-selector">
+                <button class="lang-btn" data-lang="EN">EN</button>
+            </div>
+            <!-- Contact Button -->
+            <a href="./paginas/contactos.html" class="contact-btn" data-translate="nav-contact">Contact</a>
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <button class="mobile-menu-btn" onclick="toggleMobileMenu(this)">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+
+        <!-- Mobile Navigation -->
+        <nav class="mobile-nav" id="mobileNav">
+            <a href="index.html" onclick="closeMobileMenu()" data-translate="nav-home">Home</a>
+            <a href="index.html#card4" onclick="closeMobileMenu()" data-translate="nav-about">About</a>
+            <a href="./paginas/projetos.html" onclick="closeMobileMenu()" data-translate="nav-projects">Projects</a>
+            <a href="./paginas/contactos.html" onclick="closeMobileMenu()" data-translate="nav-contact">Contact</a>
+
+            <!-- Language Selector for mobile -->
+            <div class="language-selector">
+                <button class="lang-btn" data-lang="EN">EN</button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main" id="scrollContainer">
+        <section class="cardlogo" id="cardlogo">
+            <!-- Hero Section with Large Logo -->
+            <div class="hero">
+                <div class="hero-logo animate-fade-in">
+                    <img src="./images/logo_menu1.png" alt="Logotipo moonu" class="logo-img1">
+                </div>
+            </div>
+        </section>
+
+        <!-- First Card Section -->
+        <section class="card" id="card1">
+            <div class="firstCard-content animate-fade-in">
+                <!-- Left Side - Main Tagline -->
+                <div class="tagline">
+                    <h1 data-translate="hero-title">
+                        moonu, design<br>
+                        with intention.
+                    </h1>
+                </div>
+
+                <!-- Right Side - Description -->
+                <div class="description">
+                    <p data-translate="hero-description">
+                        <span class="brand-name">moonu</span> is an identity under construction, a personal brand with purpose: transforming ideas into meaningful solutions.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Cards Container -->
+        <div class="snap-container">
+
+            <section class="card" id="card2">
+                <img src="./images/poster_moonu.webp" alt="moonu-advertising" class="moonu-fundo-boasvindas">
+
+                <div class="boasvindas-container">
+
+                    <!-- Top section with greeting and date -->
+                    <div class="boasvindas-container-left">
+                        <div class="greeting" id="greeting">Hello!</div>
+                        <img src="./images/logo_menu.png" alt="moonu" class="moonu-logo-boasvindas">
+                    </div>
+
+                    <div class="date-section">
+                        <div class="day"><span id="dia-da-semana"></span></div>
+                        <div class="date"><span id="data-completa"></span></div>
+                    </div>
+
+                    <!-- Text slideshow area -->
+                    <div class="text-slideshow-area">
+                        <!-- Main text content -->
+                        <div class="main-text" id="mainText1">
+                            <div data-translate="welcome-text1-line1">Discover</div>
+                            <div data-translate="welcome-text1-line2">the moonu</div>
+                            <div data-translate="welcome-text1-line3">universe.</div>
+                        </div>
+
+                        <div class="main-text2" id="mainText2">
+                            <div data-translate="welcome-text2-line1">And open</div>
+                            <div data-translate="welcome-text2-line2">the window</div>
+                            <div data-translate="welcome-text2-line3">to your brand.</div>
+                        </div>
+                    </div>
+
+                    <!-- Controls -->
+                    <div class="bottom-controls">
+                        <a class="arrow-button" id="toggleTextButton" aria-label="Toggle text">
+                            <img src="./images/seta.svg" alt="" width="30" height="30">
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="card" id="card3">
+                <div class="projetos-container">
+                    <div>
+                        <img src="./images/design1.webp" alt="design1" class="design1">
+                    </div>
+                    <div>
+                        <img src="./images/design2.webp" alt="design2" class="design2">
+                    </div>
+                    <div>
+                        <img src="./images/design3.webp" alt="design3" class="design3">
+                    </div>
+                </div>
+            </section>
+
+            <section class="card" id="card4">
+                <img src="./images/fundo_sobre.webp" alt="moonu-advertising" class="moonu-fundo-boasvindas">
+
+                <div class="contentsobre">
+                    <div class="profile-section">
+                        <!-- Profile Image -->
+                        <div class="profile-image-container">
+                            <div class="profile-image">
+                                <img src="./images/imagem_perfil.webp" alt="Profile" class="profile-img">
+                            </div>
+                        </div>
+
+                        <!-- CV Button -->
+                        <div class="cv-button-container">
+                            <a href="./download/cv _nuno.pdf" target="_blank" class="cv-button">
+                                <span>CV</span>
+                                <svg class="download-icon" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2">
+                                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                                    <polyline points="7,10 12,15 17,10" />
+                                    <line x1="12" y1="15" x2="12" y2="3" />
+                                </svg>
+                            </a>
+                        </div>
+
+                        <!-- Title -->
+                        <h1 class="title_profile" data-translate="profile-title">Graphic
+                            Designer
+                        </h1>
+
+                        <!-- Services -->
+                        <div class="services">
+                            <p class="service-item" data-translate="service-branding">Brand Design</p>
+                            <p class="service-item" data-translate="service-editorial">Editorial</p>
+                            <p class="service-item" data-translate="service-web">Web design</p>
+                        </div>
+                    </div>
+
+                    <div class="tagline-sobre">
+                        <p data-translate="about-tagline-1">By combining creativity and technical knowledge,</p>
+                        <p data-translate="about-tagline-2">I transform visions into reality!</p>
+                    </div>
+
+                    <button class="moonu-button3" id="moonuButton3">
+                        <div class="arrow-circle3" id="arrowCircle3">
+                           <img src="./images/seta.svg" alt="" width="30" height="30">
+                        </div>
+                        <span class="button-text3" data-translate="why-moonu-btn">Why moonu?</span>
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal-overlay3" id="modal3">
+                        <div class="modal-content3">
+                            <div class="modal-header3">
+                                <button class="close-button3" id="closeModal3">&times;</button>
+                            </div>
+
+                            <div class="profile-image-container-modal">
+                                <div class="profile-image-back-modal"></div>
+                                <div class="profile-image-modal">
+                                    <img src="./images/imagem_perfil.webp" alt="Profile" class="profile-img-modal">
+                                </div>
+                            </div>
+
+                            <div class="cv-button-container" id="cv-button-modal">
+                                <a href="./download/cv _nuno.pdf" target="_blank" class="cv-button">
+                                    <span>CV</span>
+                                    <svg class="download-icon" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2">
+                                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                                        <polyline points="7,10 12,15 17,10" />
+                                        <line x1="12" y1="15" x2="12" y2="3" />
+                                    </svg>
+                                </a>
+                            </div>
+
+                            <div class="modal-body3" data-translate="modal-content">
+                                Born from the combination of letters from my full name — <strong>Nuno
+                                    Moura</strong>.<br><br>
+                                <strong>More than a phonetic junction</strong>, it's a symbol of cycles, phases and
+                                transformation, just like my journey. <strong>It's a personal brand
+                                    that reflects my duality:
+                                    between technical and sensitive, structured and fluid.</strong> <br><br>
+                                <strong>Moonu</strong> is the space where I apply my creative vision to digital, with
+                                purpose, inclusion and
+                                authenticity.
+                            </div>
+                        </div>
+                    </div>
+            </section>
+        </div>
+
+        <section class="card" id="card5">
+            <div class="content-cards">
+                <!-- Content Cards -->
+                <div class="content-card">
+                    <p data-translate="process-card-1">Whatever the challenge, I start by listening and diving into the problem with empathy.</p>
+                </div>
+
+                <div class="content-card">
+                    <p data-translate="process-card-2">I try to understand the target audience and their needs.</p>
+                </div>
+
+                <div class="content-card">
+                    <p data-translate="process-card-3">I translate ideas into visual systems that tell stories and create emotional connection.</p>
+                </div>
+
+                <div class="content-card">
+                    <p data-translate="process-card-4">I align form and function, where aesthetics serves the message and user experience.</p>
+                </div>
+            </div>
+
+            <div class="profile-image-back-modal" id="decoration1"></div>
+            <div class="profile-image-back-modal" id="decoration2"></div>
+
+            <!-- See More Button -->
+            <section class="cta">
+                <button onclick="location.href='./paginas/projetos.html'" class="cta-btn" data-translate="see-more-btn">See more</button>
+            </section>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; <span id="anoAtual"></span> <span data-translate="footer-text">Moonu Design | Compiled creativity</span></p>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/mnunomoura/" target="_blank" rel="noopener noreferrer">Linkedin</a>
+            <span>|</span>
+            <a href="https://www.behance.net/nfiliper" target="_blank" rel="noopener noreferrer">Behance</a>
+            <span>|</span>
+            <a href="https://www.instagram.com/moonu.creative/" target="_blank" rel="noopener noreferrer">Instagram</a>
+        </div>
+    </footer>
+
+</body>
+
+</html>
